@@ -27,7 +27,7 @@
 printf("龙，可是帝王之征。\n");
 ```
 
-提交说明为 `Test Commit`，提交编号为 [`2a39099`](https://github.com/AndyChen060709/TestLab/commit/2a39099ca8ccaa20a594b4134a04eedfff6b177a)。随后创建 `feature` 分支，添加 `Test feature.` 输出，并通过 PR #1 完成了一次分支合并练习。
+提交说明为 `Test Commit`，提交编号为 [`2dc5e37`](https://github.com/AndyChen060709/TestLab/commit/2dc5e377ed2aca40c1210d0dcd3df52383f5adc9)。随后创建 `feature` 分支，添加 `Test feature.` 输出，并通过 PR #1 完成了一次分支合并练习。
 
 ### 2. 制造合并冲突
 
@@ -35,8 +35,8 @@ printf("龙，可是帝王之征。\n");
 
 | 分支 | 新输出内容 | 提交编号 |
 | --- | --- | --- |
-| `feature` | 死是凉爽的夏夜，可供人无忧的安眠。 | `52a7b4b` |
-| `main` | 好火啊，比夷陵之火还要好。 | `de33c7e` |
+| `feature` | 死是凉爽的夏夜，可供人无忧的安眠。 | `b8c5ed8` |
+| `main` | 好火啊，比夷陵之火还要好。 | `cf6d3d5` |
 
 创建由 `feature` 合入 `main` 的 PR #3 后，GitHub 提示 `main.c` 存在冲突。原因是两个分支对共同版本的同一行做出了不同修改，Git 无法自动确定应保留哪一方。
 
@@ -48,7 +48,7 @@ printf("龙，可是帝王之征。\n");
 
 ![图 2：手动整理代码，保留两个分支的输出](images/02-resolution.png)
 
-标记解决并提交后，生成 `d75352b`（`Merge branch 'main' into feature`）。随后合并 PR #3，生成 `ec7fa8b`，最终两项修改均进入 `main`。
+标记解决并提交后，生成 `1fd3181`（`Merge branch 'main' into feature`）。随后合并 PR #3，生成 `dadc567`，最终两项修改均进入 `main`。
 
 ![图 3：PR #3 已合并，修改进入 main](images/03-merged.png)
 
